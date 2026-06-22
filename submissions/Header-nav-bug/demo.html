@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bug 1 Fix - Header Text Wrapping</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/SAPTARSHI-coder/EaseMotion-css@main/easemotion.min.css" />
+  <style>
+    body { background-color: #0f172a; margin: 0; font-family: sans-serif; }
+    .docs-header { display: flex; align-items: center; justify-content: space-between; padding: 1rem; background: #1e293b; }
+    .docs-header-links { display: flex; gap: 1rem; list-style: none; padding: 0; width: 300px; /* Constrained width to force wrapping behavior */ }
+    
+    /* THE FIX: Prevents text wrapping inside the links */
+    .docs-header-links a {
+      white-space: nowrap; 
+      color: #fff;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="docs-header">
+    <a href="#" class="docs-logo" style="color: #a78bfa; text-decoration: none; font-weight: bold;">EaseMotion CSS</a>
+    
+    <ul class="docs-header-links">
+      <li><a href="#getting-started">Getting Started</a></li>
+      <li><a href="#utilities">Animation Preview</a></li>
+      <li><a href="#components">Animation Builder</a></li>
+    </ul>
+  </header>
+
+</body>
+</html>

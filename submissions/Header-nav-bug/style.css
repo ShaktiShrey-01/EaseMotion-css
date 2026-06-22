@@ -1,0 +1,5 @@
+/* Add this rule to docs.css to prevent text wrapping on header links */
+.docs-header-links a,
+.docs-header-links button {
+  white-space: nowrap;
+}
