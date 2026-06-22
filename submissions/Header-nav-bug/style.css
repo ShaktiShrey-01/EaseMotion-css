@@ -3,3 +3,15 @@
 .docs-header-links button {
   white-space: nowrap;
 }
+/* Update the existing .docs-header-links class in docs.css */
+.docs-header-links {
+  display: flex;
+  flex-wrap: nowrap; /* Changed from wrap to nowrap */
+  overflow-x: auto;  /* Added to allow horizontal scrolling */
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Chrome/Safari: Hide scrollbar for cleaner look */
+.docs-header-links::-webkit-scrollbar {
+  display: none; 
+}
