@@ -1,0 +1,19 @@
+/* Update the existing .docs-header-links class in docs.css */
+.docs-header-links {
+  display: flex;
+  flex-wrap: nowrap; /* Changed from wrap to nowrap */
+  overflow-x: auto;  /* Added to allow horizontal scrolling */
+  -webkit-overflow-scrolling: touch;
+  gap: var(--ease-space-5);
+  align-items: center;
+  justify-content: flex-end;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  scrollbar-width: none; /* Firefox: Hide scrollbar for cleaner look */
+}
+
+/* Chrome/Safari: Hide scrollbar for cleaner look */
+.docs-header-links::-webkit-scrollbar {
+  display: none; 
+}
